@@ -1,0 +1,193 @@
+
+body {
+  font-family: 'Open Sans', sans-serif; 
+  margin: 0;
+  padding: 0;
+}
+
+.CV {
+  background-color: #fff;
+  width: 80%;
+  margin: 20px auto;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.div-left, .div-right {
+  padding: 20px;
+}
+
+.div-left {
+  color: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+ 
+  gap: 20px;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(57, 177, 160, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 10px; 
+  position: relative; 
+}
+
+.div-right {
+  background-color: #e9ecef;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 10px; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+  }
+
+.donnees-personnelles, .atouts, .centre-interet {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.réseaux-sociaux {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.langues {
+  flex: 1;
+}
+
+.donnees-personnelles div, .atouts div, .centre-interet div, .langues div {
+  margin-bottom: 15px;
+}
+
+a {
+  color: #17a2b8;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+a:hover {
+  color: #0d6efd; 
+  text-decoration: underline;
+}
+
+.title {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  margin-top: 20px;
+  display: block;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+  border-bottom: 2px solid transparent; 
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section::after {
+  content: '';
+  display: block;
+  width: 60%; 
+  height: 2px; 
+  background: linear-gradient(to right, #02aab0, #00cdac); 
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1); 
+  position: absolute;
+  bottom: -1px; 
+  left: 20%; 
+  border-radius: 2px; 
+}
+
+.section.certificats::after {
+  display: none;
+}
+
+.name {
+  font-family: 'Merriweather', serif; 
+  font-size: 2em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sommaire {
+  margin-bottom: 20px;
+}
+
+.titleMaster, .titleLicence, .titleDeug, .titleBaccalauréat, .titleProject, .titreCompetence {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.Master, .Licence, .Deug, .Baccalauréat {
+  margin-bottom: 15px;
+}
+
+.descriptionMaster, .descriptionLicence, .descriptionDeug, .descriptionBaccalauréat, .competencesDesc {
+  margin-left: 25px;
+  line-height: 1.6; 
+}
+.descProjet{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.projet {
+  margin-bottom: 15px;
+}
+
+.certifContainer {
+  margin-top: 15px;
+}
+
+.certif {
+  margin-left: 25px;
+}
+
+.lieuProjet {
+  margin-left: 25px;
+}
+
+.competence {
+  margin-bottom: 15px;
+}
+.profilGithub{
+    color:white
+}
+.profilLinkedin{
+    color:white;
+
+}
+.email{
+  margin-bottom: 10px;
+}
+.github{
+  margin-bottom: 10px;
+}
+.niveauLangue{
+  margin-bottom: 10px;
+}
+.atout{
+  margin-bottom: 10px;
+}
+.interet{
+  margin-bottom: 10px;
+}
+
