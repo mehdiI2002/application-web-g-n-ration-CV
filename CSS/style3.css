@@ -135,5 +135,83 @@ body {
   .interet{
     margin-bottom: 10px;
   }
+  button {
+    background-color:#343434;
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    border-radius: 12px;
+   
+  
+  }
+  
+  button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #1b271b; 
+  }
+  
+  
+  
+  .CVs {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
+  .button-container {
+  
+    margin-bottom: 20px; 
+    text-align: center; 
+    flex-direction: row; 
+  
+  
+  }
+  .barre-recherche{
+    margin-left: 0px;
+  }
+  .barre-recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .barre-recherche label {
+    margin-right: 10px;
+  }
+  
+  .barre-recherche input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .barre-recherche input[type="text"]:focus {
+    border-color: #343434;
+  }
+  #erreur{
+    text-align: center; 
+  }
+  #styles, #styles option {
+    background-color: #343434;;
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    color: white;
+  }
+  
+  
+  
+  
     
   

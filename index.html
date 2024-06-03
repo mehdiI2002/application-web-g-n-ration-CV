@@ -2,11 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/style4.css">
-    <script src = "JS/cv.js"></script>
+    <link id = "link" rel="stylesheet" href="CSS/style1.css" >
+    <script src = "JS/cvs.js" defer></script>
+    <script src="JS/principale-component.js" defer></script>
+    <script src = "JS/component-left.js"  defer></script>
+    <script src = "JS/component-right.js" defer></script>
+    <script src = "JS/show-cv.js" defer></script>
     <script src="JS/index.js" defer ></script>
+    <script src ="JS/events-buttons.js" defer></script>
+   <script src = "JS/inputReader.js" defer ></script>
+   <script src = "JS/afficher-CVs.js" defer ></script>
+   <script src = "JS/dropdown-list-events.js" defer></script>
+
     <title>CV EL MEHDI AMARTI RIFFI</title>
 </head>
 <body>
+    <div class = "button-container">
+    <button id="previousButton">Previous</button>
+    <button id="nextButton">Next</button>
+    <button id = "first">First</button>
+    <button id = "last">Last</button>
+    <button  id = "rechercheCV">Recherche CV </button>
+    <div id = "afficherCVs"></div>
+    <button id ="listeCvs" onclick = "liste_CVs()">liste CVs</button> 
+    <button id = "creationCV">Creer CV</button>
+
+
+</div>
+<label id = "lable">Choisit un style</label>
+<select id="styles" onchange="chooseStyleCV()">
+    <option value="style1">style 1</option>
+    <option value="style2">style 2</option>
+    
+</select>
+</div>
 </body>
 </html>

@@ -7,18 +7,18 @@ body {
 
 .CV {
   background-color:white;
-  
   width: 80%;
   margin: 20px auto;
   padding: 20px;
+  justify-content: space-between;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-wrap: wrap; 
-  width: 1000px;
 }
 
 .div-left, .div-right {
   padding: 20px;
+  margin: 5px;
 }
 
 .div-left {
@@ -140,4 +140,80 @@ a:hover {
 .interet{
   margin-bottom: 10px;
 }
+button {
+  background-color:#356396; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  border-radius: 12px;
+ 
 
+}
+
+button:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #1b271b; 
+}
+
+
+
+.CVs {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+.button-container {
+  margin-bottom: 20px; 
+  text-align: center; 
+  flex-direction: row; 
+}
+.barre-recherche{
+  margin-left: 0px;
+}
+.barre-recherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.barre-recherche label {
+  margin-right: 10px;
+}
+
+.barre-recherche input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.barre-recherche input[type="text"]:focus {
+  border-color: #356396; 
+}
+#erreur{
+  text-align: center; 
+}
+#languageContainer{
+  border-radius: 1px;
+  border-color: #080808;
+}
+
+
+#styles, #styles option {
+  background-color: #356396;
+  border: none;
+  border-radius: 2px;
+  padding: 2px;
+  color: white;
+}

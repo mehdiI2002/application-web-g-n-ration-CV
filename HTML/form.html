@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel = "stylesheet" href = "../CSS/styleForm.css">
+    <link id = "link" rel="stylesheet" href="../CSS/style1.css" >
+
+    <script src = "../JS/cvs.js"></script>
+    <script src = "../JS/WriteInfos.js" defer></script>
+    <script src = "../JS/addFormLanguage.js" defer ></script>
+    <script src = "../JS/addFormSoftSkill.js" defer ></script>
+    <script src = "../JS/addFormInteret.js" defer></script>
+   
+    <script src="../JS/principale-component.js" defer></script>
+    <script src = "../JS/component-left.js"  defer></script>
+    <script src = "../JS/component-right.js" defer></script>
+    <script src = "../JS/show-cv.js" defer ></script>
+    <script src = "../JS/addFormEducation.js"></script>
+    <script src = "../JS/addFormTechnologySkill.js"></script>
+    <script src = "../JS/addFormExperience.js"></script>
+     <script src = "../JS/addFormCertification.js"></script>
+</head>
+<body>
+    <h1>Generation de CV</h1>
+    <form id ="insertCV">
+        <label>FirstName</label>
+        <input type = "text" id = "firstName">
+        <label>LastName</label>
+        <input type ="text" id ="lastName">
+        <label>Sommaire</label>
+        <input type ="text" id ="summary">
+        <label>image</label>
+        <input type="file" id = "image"/>
+        <label>Email</label>
+        <input type="email" id = "email"/>
+        <label>Adresse</label>
+        <input type="text" id = "adresse"/>
+        <label>Date de naissance</label>
+        <input type="date" id = "yearBorn"/>
+        <label>Numero  de telephone</label>
+        <input type="number" id = "tel"/>
+        <label>Lien Github</label>
+        <input type="url" id = "github"/>
+        <label>Lien LinkedIn</label>
+        <input type="url" id = "linkedin"/>
+</form>
+<div id = "divLanguages">
+   <form id ="insertLanguage_0">    
+   
+        <label>Nom de langue</label>
+        <input type  ="text" id="NomLanguage_0" >
+        <label>Niveau  de Langue</label>
+        <input type = "text" id = "level_0" />
+        <label>Certifiaction</label>
+        <input type = "text" id = "certification_0" />
+        <label>Experience</label>
+        <input type = "text" id = "experience_0" />
+        <button type="button" onclick="addFormLanguage()">Ajouter une langue</button>
+    </div>    
+</form>
+<div id = "divSoftSkills">
+<form id ="softSkill_0">        
+    <label>SoftSkill</label>
+    <input type ="text" id="skill_0" >
+    <button type="button" onclick="addFormSoftSkill()">Ajouter Skill</button>
+</form>
+</div>
+
+<div id = "intérêts">
+<form id ="intérêts_0">        
+    <label>Interet</label>
+    <input type ="text" id="intérêt_0" />
+    
+    <button type="button" onclick="addFormInteret()">Ajouter Interet</button>
+</form>
+</div>
+<div id = "educationDiv">
+<form id = "educationForm_0" >
+    <label>Diplome</label>
+    <input type = "text" id = "diplome_0">
+    <label>Organisation</label>
+    <input type = "text" id = "organisation_0">
+    <label>Annee</label>
+    <input type = "text" id = "annee_0">
+    <button  type = "button" onclick = "addFormEducation()">Ajouter Formation</button>
+    </form>
+</div>
+<div id ="technologySkillsDiv">
+    <form id ="technologyForm_0">
+        <label>Skill</label>
+        <input type = "text" id = "skillTechnology_0"/>
+        <label>detail</label>
+        <input type = "text" id = "detail_0" placeholder="detail0,detail1(respectez cette format)"></input>
+        <button  type = "button" onclick = "addFormTechnologySkill()">Ajoute Technlogy Skill</button>
+
+    </form>
+</div>
+<div id ="experiencesDiv">
+    <form id = "experienceForm_0">
+        <label>Type</label>
+        <input type = "text" id = "type_0">
+        <label>Organisation</label>
+        <input type = "text" id = "org_0">
+        <label>Title</label>
+        <input  type = "text" id = "title_0">
+        <label>Technologies</label>
+        <input type = "text" id = "technologies_0">
+        <label>Year</label>
+        <input type = "text" id = "year_0">
+        <label>Duration</label>
+        <input type = "text" id ="duration_0">
+        <button  type = "button" onclick = "addFormExperience()">Ajouter Experience</button>
+    </form>
+</div>
+<div id = "certifDiv">
+    <form id = "certifForm_0">
+        <label>Titre</label>
+        <input type = "text" id = "titleCertif_0">
+        <label>Organisation</label>
+        <input type = "text" id = "organisationCertif_0">
+        <label>Link</label>
+        <input type = "text" id = "lienCertif_0">
+        <button  type = "button" onclick = "addFormCertification()">Ajouter Certification</button>
+
+    </form>
+
+</div>
+        
+<button id = "submitForm" type="button" onclick="writeCV()">Confirmer</button>
+</body>
+</html>
